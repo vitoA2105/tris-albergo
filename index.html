@@ -1,0 +1,48 @@
+<HTML>
+
+<HEAD>
+<link href="style.css" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
+<TITLE>Tris</TITLE>
+<script>
+    turno=0
+    function assegna(riga,colonna)
+    {
+        n=riga*3+colonna
+    if(turno%2==0)
+        {
+        document.images[n].src="im.o.tris.png"
+        }
+    else
+        {
+        document.images[n].src="im.x.tris.jpg"
+        }
+    turno=turno+1
+    }
+</script>
+</HEAD>
+
+<BODY>
+<div id="body">
+<div id="testo">
+<h1>Tris</h1>
+<h3>Gioco del Tris (Albergo vito)</h3>
+</div>
+<br>
+<br>
+<br>
+<body>
+<div align="center" width="128" height="128">
+<img src="quadrato.png" width="128" height="128" onClick="assegna(0,0)" />
+<img src="quadrato.png" width="128" height="128" onClick="assegna(0,1)" />
+<img src="quadrato.png" width="128" height="128" onClick="assegna(0,2)" /><br>
+<img src="quadrato.png" width="128" height="128" onClick="assegna(1,0)" />
+<img src="quadrato.png" width="128" height="128" onClick="assegna(1,1)" />
+<img src="quadrato.png" width="128" height="128" onClick="assegna(1,2)" /><br>
+<img src="quadrato.png" width="128" height="128" onClick="assegna(2,0)" />
+<img src="quadrato.png" width="128" height="128" onClick="assegna(2,1)" />
+<img src="quadrato.png" width="128" height="128" onClick="assegna(2,2)" /><br>
+</div>
+</div>
+</BODY>
+</HTML>
